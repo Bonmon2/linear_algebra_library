@@ -1,0 +1,1 @@
+add_library(linear_algebra linear_algebra.cpp linear_algebra.hpp)
