@@ -27,10 +27,9 @@ vec3 vec3::operator - (const vec3& vec3_2) {
     return vec3_1;
 }
 
-/*float vec3::operator * (const vec3& vec3_2) {
-    float temp = vec3::x * vec3_2.x + vec3::y * vec3_2.y + vec3::z * vec3_2.z;
-    return temp;
-}*/
+float vec3::operator * (const vec3& vec3_2) {
+    return vec3::x * vec3_2.x + vec3::y * vec3_2.y + vec3::z * vec3_2.z;
+}
 
 /*vec3::operator char*() {
     //float x = vec3::x;
