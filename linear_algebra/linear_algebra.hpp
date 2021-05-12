@@ -6,8 +6,9 @@ public:
 
     vec3 operator + (const vec3& vec3_2);
     vec3 operator - (const vec3& vec3_2);
-    float operator * (const vec3& vec3_2);
-    operator char*() {return (char *)"please implement";}
+    static float      dot(const vec3& vec3_1, const vec3& vec3_2);
+    static vec3     cross(const vec3& vec3_1, const vec3& vec3_2);
+    operator char*();
 
 private:
 

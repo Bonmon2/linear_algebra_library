@@ -27,14 +27,20 @@ vec3 vec3::operator - (const vec3& vec3_2) {
     return vec3_1;
 }
 
-float vec3::operator * (const vec3& vec3_2) {
-    return vec3::x * vec3_2.x + vec3::y * vec3_2.y + vec3::z * vec3_2.z;
+float vec3::dot(const vec3& vec3_1, const vec3& vec3_2) {
+    return vec3_1.x * vec3_2.x + vec3_1.y * vec3_2.y + vec3_1.z * vec3_2.z;
 }
 
-/*vec3::operator char*() {
-    //float x = vec3::x;
-    char* tempx;
-    sprintf(tempx, "%.3f", vec3::x);
-    char* temp = "[" + (char*)vec3::x + "," + vec3::y << "," << vec3::z << "]";
-    //return 
-}*/
+vec3 vec3::cross(const vec3& vec3_1, const vec3& vec3_2) {
+    vec3 tempVec3(0, 0, 0);
+
+    tempVec3.x = vec3_1.y * vec3_2.z - vec3_1.z * vec3_2.y;
+    tempVec3.y = vec3_1.z * vec3_2.x - vec3_1.x * vec3_2.z;
+    tempVec3.z = vec3_1.x * vec3_2.y - vec3_1.y * vec3_2.x;
+
+    return tempVec3;
+}
+
+vec3::operator char*() {
+    return (char*) "working on it";
+}
