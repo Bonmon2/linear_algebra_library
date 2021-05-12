@@ -6,13 +6,13 @@ public:
 
     vec3 operator + (const vec3& vec3_2);
     vec3 operator - (const vec3& vec3_2);
-    float operator * (const vec3& vec3_2);
-    operator char*() {return "please implement";}
+    //float operator * (const vec3& vec3_2);
+    //operator char*() {return "please implement";}
 
 private:
 
 public:
-    static float x;
-    static float y;
-    static float z;
+    float x;
+    float y;
+    float z;
 };

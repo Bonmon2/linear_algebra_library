@@ -1,6 +1,5 @@
 #include "linear_algebra.hpp"
 #include <iostream>
-#include <stdio.h>
 
 vec3::vec3(float _x, float _y, float _z) {
     vec3::x = _x;
@@ -28,9 +27,10 @@ vec3 vec3::operator - (const vec3& vec3_2) {
     return vec3_1;
 }
 
-float vec3::operator * (const vec3& vec3_2) {
-    return (vec3::x * vec3_2.x + vec3::y * vec3_2.y + vec3::z * vec3_2.z);
-}
+/*float vec3::operator * (const vec3& vec3_2) {
+    float temp = vec3::x * vec3_2.x + vec3::y * vec3_2.y + vec3::z * vec3_2.z;
+    return temp;
+}*/
 
 /*vec3::operator char*() {
     //float x = vec3::x;

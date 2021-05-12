@@ -10,5 +10,5 @@ int main() {
     vec3 sumvec = my1Vec - my2Vec;
     std::cout << my1Vec.x << std::endl;
     std::cout << sumvec.x << sumvec.y << sumvec.z;
-    std::cout << my1Vec * my2Vec;
+    //std::cout << my1Vec * my2Vec;
 }
