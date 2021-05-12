@@ -1,5 +1,6 @@
 #include "linear_algebra.hpp"
 #include <iostream>
+#include <string.h>
 
 vec3::vec3(float _x, float _y, float _z) {
     vec3::x = _x;
@@ -41,6 +42,19 @@ vec3 vec3::cross(const vec3& vec3_1, const vec3& vec3_2) {
     return tempVec3;
 }
 
-vec3::operator char*() {
-    return (char*) "working on it";
-}
+/*vec3::operator char*() {
+    char* tempStr = "[";
+    char* x;
+    char* y;
+    char* z;
+    strcat(tempStr, (char *)sprintf(x,"0.3f",vec3::x));
+    strcat(tempStr, (char *)",");
+    strcat(tempStr, (char *)sprintf(y, "0.3f",vec3::y));
+    strcat(tempStr, (char *)",");
+    strcat(tempStr, (char *)sprintf(z, "0.3f",vec3::z));
+    strcat(tempStr, (char *)"]");
+
+    std::cout << "working" << std::endl;
+
+    return tempStr;
+}*/
