@@ -42,11 +42,13 @@ vec3 vec3::cross(const vec3& vec3_1, const vec3& vec3_2) {
     return tempVec3;
 }
 
-/*vec3::operator char*() {
-    char* tempStr = "[";
+vec3::operator char*() {
+    char* tempStr = "Implementing";
+    /*char* tempStr;
     char* x;
     char* y;
     char* z;
+    strcmp(tempStr, (char *)"]");
     strcat(tempStr, (char *)sprintf(x,"0.3f",vec3::x));
     strcat(tempStr, (char *)",");
     strcat(tempStr, (char *)sprintf(y, "0.3f",vec3::y));
@@ -54,7 +56,7 @@ vec3 vec3::cross(const vec3& vec3_1, const vec3& vec3_2) {
     strcat(tempStr, (char *)sprintf(z, "0.3f",vec3::z));
     strcat(tempStr, (char *)"]");
 
-    std::cout << "working" << std::endl;
+    std::cout << "working" << std::endl;*/
 
     return tempStr;
-}*/
+}
